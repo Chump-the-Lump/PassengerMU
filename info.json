@@ -1,0 +1,13 @@
+{
+	"Id":"PassengerMUCable",
+	"DisplayName":"MU Cars",
+	"Version":"1.0.0",
+	"Author":"Chump_the_Lump",
+	"HomePage":"",
+	"Repository":"",
+	"ManagerVersion":"0.27.3",
+	"Requirements":[],
+	"LoadAfter":[],
+        "AssemblyName": "PassengerMUCable.dll",
+        "EntryMethod": "PassengerMUCable.Main.Load"
+}
