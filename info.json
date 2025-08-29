@@ -1,9 +1,9 @@
 {
 	"Id":"PassengerMUCable",
-	"DisplayName":"MU Cars",
-	"Version":"1.0.0",
+	"DisplayName":"Passenger Multiple Unit",
+	"Version":"1.3.0",
 	"Author":"Chump_the_Lump",
-	"HomePage":"",
+	"HomePage":"https://www.nexusmods.com/derailvalley/mods/1260",
 	"Repository":"",
 	"ManagerVersion":"0.27.3",
 	"Requirements":[],
