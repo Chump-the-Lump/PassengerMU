@@ -26,6 +26,7 @@ using Object = UnityEngine.Object;
         public static bool PatchAllMode = Main.settings.AddMultipleUnitCablesToEverything;
         public static bool AltMUPos = Main.settings.AddMultipleUnitCablesToEverything;
         public static bool TenderMU = Main.settings.Enable282TenderMU;
+        public static bool Be2MU = Main.settings.EnableBe2MU;
 
         public static TrainCarType[] AddMUToTypes = new TrainCarType[]
         {
@@ -56,7 +57,7 @@ using Object = UnityEngine.Object;
                 TrainCar car = livery.prefab.GetComponent<TrainCar>();
                 if (!PatchAllMode && AddMUToTypes.Contains(car.carType)) MuLiveries.Add(livery);
                 else if (!PatchAllMode && TenderMU && CarTypes.IsTender(livery)) MuLiveries.Add(livery);
-
+                else if (Be2MU && car.carType == TrainCarType.LocoMicroshunter) MuLiveries.Add(livery);
                 else if (PatchAllMode && !CarTypes.IsLocomotive(livery)) MuLiveries.Add(livery);
 
                 TrainCar loco = livery.prefab.GetComponent<TrainCar>();
@@ -97,7 +98,7 @@ using Object = UnityEngine.Object;
             Transform carToMuBuffsParent = carToMU.prefab.transform.Find("[buffers]");
             if (carToMuBuffsParent == null|| carToMU.prefab.gameObject.GetComponent<MultipleUnitModule>()!=null)
             {
-                Debug.Log("Car Type of: "+carToMU.prefab.name+ " is incompatible");
+                Debug.Log("Car Type of: "+carToMU.prefab.name+ " is incompatible or already has MU.");
 
                 Object.Destroy(de6);
                 return;

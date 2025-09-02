@@ -51,8 +51,12 @@ namespace PassengerMUCable;
 public class Settings : UnityModManager.ModSettings, IDrawable
     {
         [DrawHeader("All settings apply the first time a save is loaded, a restart is required if you want to change the settings after already loading in to a world")]
+        
         [Draw("Enable 282 tender MU")]
-        public bool Enable282TenderMU = false;
+        public bool Enable282TenderMU = true;
+        
+        [Draw("Main Line BB2")]
+        public bool EnableBe2MU = false;
         
         [Draw("Use alternate positioning to reduce clipping")]
         public bool AlternateMultipleUnitCablePosition = false;
@@ -63,9 +67,7 @@ public class Settings : UnityModManager.ModSettings, IDrawable
         public override void Save(UnityModManager.ModEntry entry)
         {
             Save(this, entry);
-            CarSpawnerPatch.PatchAllMode = AddMultipleUnitCablesToEverything;
-            CarSpawnerPatch.AltMUPos = AlternateMultipleUnitCablePosition;
-            CarSpawnerPatch.TenderMU = Enable282TenderMU;
+            OnChange();
         }
 
         public void OnChange()
@@ -73,5 +75,6 @@ public class Settings : UnityModManager.ModSettings, IDrawable
             CarSpawnerPatch.PatchAllMode = AddMultipleUnitCablesToEverything;
             CarSpawnerPatch.AltMUPos = AlternateMultipleUnitCablePosition;
             CarSpawnerPatch.TenderMU = Enable282TenderMU;
+            CarSpawnerPatch.Be2MU = EnableBe2MU;
         }
     }
