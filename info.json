@@ -4,7 +4,7 @@
 	"Version":"1.4.0",
 	"Author":"Chump_the_Lump",
 	"HomePage":"https://www.nexusmods.com/derailvalley/mods/1260",
-	"Repository":"",
+	"Repository":"https://raw.githubusercontent.com/Chump-the-Lump/PassengerMU/refs/heads/main/repository.json",
 	"ManagerVersion":"0.27.3",
 	"Requirements":[],
 	"LoadAfter":[],
