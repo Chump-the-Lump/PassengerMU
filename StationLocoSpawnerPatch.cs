@@ -20,7 +20,7 @@ public static class StationLocoSpawnerPatch
         { "[Y]_[FF]_[A-02-P]", new []{1,4} },
         { "[Y]_[CW]_[A-02-D]", new []{1,4} },
         { "[Y]_[MF]_[B-07-P]", new []{1,4} },
-        { "[Y]_[SM]_[T1-01-P]", new []{1,4} },
+        { "[Y]_[SM]_[T1-01-P]", new []{1,5} },
         { "[Y]_[GF]_[A-04-P]", new []{1,4} },
         { "[Y]_[HB]_[A-01-P]", new []{1,4} },
         { "[Y]_[CP]_[P1]", new []{1,6} },
