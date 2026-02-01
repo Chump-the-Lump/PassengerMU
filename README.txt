@@ -4,15 +4,14 @@
 :: FEATURES::
 • MU cables and compatibility for passenger cars and caboose.
 
-:: GENERAL OTHER STUFF Template::
-• Un-tested with Multi-player Mod.
+:: GENERAL OTHER STUFF ::
+• Works with Multi-player Mod.
 
-RECOMMENDED MODS  Template::
-- Passenger Job
+:: RECOMMENDED MODS ::
+• Passenger Jobs
 
 ::  KNOWN ISSUES Template::
 • First Mod here, so probably something is broken
 
 ::  CREDITS Template::
-
 ♦ Chump_the_Lump
