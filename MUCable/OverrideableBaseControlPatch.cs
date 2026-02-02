@@ -15,7 +15,7 @@ public static class OverridableBaseControlPatch
     [HarmonyPostfix]
     public static void Postfix(TrainCar car, SimulationFlow simFlow, ControlSpec spec, OverridableBaseControl __instance)
     {
-        if (CarSpawnerPatch.IsWhitelisted(car.gameObject.name)||(CarSpawnerPatch.TenderMU&&CarTypes.IsTender(car.carLivery)))
+        if (CarSpawnerPatch.IsWhitelisted(car.carLivery.prefab.name)||(CarSpawnerPatch.TenderMU&&CarTypes.IsTender(car.carLivery)))
         {
             bool notched = true;
             float notches = 1;

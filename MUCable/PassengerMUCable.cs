@@ -94,7 +94,7 @@ public class Settings : UnityModManager.ModSettings, IDrawable
         [DrawHeader("All settings apply the first time a save is loaded, a restart is required if you want to change the settings after already loading in to a world")]
         
         [Draw("Enable 282 tender MU")]
-        public bool Enable282TenderMU = true;
+        public bool Enable282TenderMU = false;
         
         [Draw("Main Line BB2")]
         public bool EnableBe2MU = false;
